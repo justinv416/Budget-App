@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrap">
+        <!-- Budget -->
+        <div class="budget-container">
+            <h1 class="budget-heading">Budget</h1>
+            <div class="input-container">
+                <input type="number" placeholder="Please Enter Budget" class="budget-input">
+                <button class="budget-submit">Submit</button>
+            </div>
+            <h2>Your Budget:<p class="budget-output"></p></h2>
+        </div>
+        <!-- Expenses -->
+        <div class="expenses-container">
+            <h1 class="expense-heading">Expenses</h1>
+            <div class="input-container">
+                <input type="number" placeholder="Enter Expense Amount" class="add-expense-input">
+                <input type="text" placeholder="Enter An Expense Description (Optional)" class="expense-description">
+            </div>
+            <button class="add-expense-btn">Add an expense</button>
+            <h2 class="expenses-total">Expenses Total: <p class="expenses-total-output"></p></h2>
+        </div>
+    </div>
+    <div class="budget-output-container">
+        <h2>Your Expenses:<p class="expenses-output"></p></h2>
+    </div>
+    <div class="remaining-container">
+        <h2>Remaining: <p class="remaining-output"></p></h2>
+        <button class="calc-submit">Submit</button>
+    </div>
+    <h2 class="expense-list">expenses list:</h2>
+</body>
+<script src="index.js"></script>
+</html>
