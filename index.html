@@ -5,38 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budget App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="wrap">
         <!-- Budget -->
         <div class="budget-container">
-            <h1 class="budget-heading">Budget</h1>
+            <div class="heading-wrap">
+                <h1 class="budget-heading">Budget</h1>
+                <img src="assets/SVG/money-bag.svg" alt="" class="money-bag-svg">
+            </div>
             <div class="input-container">
                 <input type="number" placeholder="Please Enter Budget" class="budget-input">
-                <button class="budget-submit">Submit</button>
+                <button class="budget-submit"><img src="assets/SVG/plus.svg" alt="" class="plus-svg" fill="blue">Add Budget</button>
             </div>
             <h2>Your Budget:<p class="budget-output"></p></h2>
         </div>
         <!-- Expenses -->
         <div class="expenses-container">
-            <h1 class="expense-heading">Expenses</h1>
+            <div class="heading-wrap">
+                <h1 class="expense-heading">Expenses</h1>
+                <img src="assets/SVG/expenses.svg" alt="" class="expenses-svg">
+            </div>
             <div class="input-container">
                 <input type="number" placeholder="Enter Expense Amount" class="add-expense-input">
                 <input type="text" placeholder="Enter An Expense Description (Optional)" class="expense-description">
             </div>
-            <button class="add-expense-btn">Add an expense</button>
+            <button class="add-expense-btn"><img src="assets/SVG/plus.svg" alt="" class="plus-svg">Add an expense</button>
             <h2 class="expenses-total">Expenses Total: <p class="expenses-total-output"></p></h2>
         </div>
     </div>
-    <div class="budget-output-container">
-        <h2>Your Expenses:<p class="expenses-output"></p></h2>
+    <div class="wrap">
+        <div class="remaining-container">
+            <h2 class="remaining-heading">Remaining: <p class="remaining-output"></p></h2>
+            <button class="calc-submit">Calculate<img src="assets/SVG/calculator.svg" alt="" class="calculator-svg"></button>
+        </div>
+        <div class="expenses-list-container">
+            <h2 class="expense-list-heading">expenses list:</h2>
+            <ul class="expenses-list"></ul>
+        </div>
     </div>
-    <div class="remaining-container">
-        <h2>Remaining: <p class="remaining-output"></p></h2>
-        <button class="calc-submit">Submit</button>
-    </div>
-    <h2 class="expense-list">expenses list:</h2>
 </body>
 <script src="index.js"></script>
 </html>

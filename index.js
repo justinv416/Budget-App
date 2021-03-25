@@ -17,8 +17,8 @@ const remainingOutput = document.querySelector('.remaining-output');
 const calcSubmit = document.querySelector('.calc-submit');
 
 // Create an expense list container
-let ul = document.createElement('ul');
-document.body.appendChild(ul);
+let ul = document.querySelector('.expenses-list');
+// document.body.appendChild(ul);
 
 // Global Expense Total
 let totalExpenses = 0;
