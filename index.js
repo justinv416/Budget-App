@@ -2,6 +2,12 @@
 const budgetOutput = document.querySelector('.budget-output');
 const budgetInput = document.querySelector('.budget-input');
 const budgetSubmit = document.querySelector('.budget-submit');
+// Income 
+const incomeSubmit = document.querySelector('.income-submit');
+const incomeInput = document.querySelector('.income-input');
+const incomeOutput = document.querySelector('.income-output');
+// Income Description
+const incomeDescription = document.querySelector('.income-description');
 // Expense
 const expensesOutput = document.querySelector('.expenses-output');
 // Add expense
@@ -15,22 +21,33 @@ const expensesTotalOutput = document.querySelector('.expenses-total-output');
 // Remaining
 const remainingOutput = document.querySelector('.remaining-output');
 const calcSubmit = document.querySelector('.calc-submit');
-
+// Income List
+const incomeList = document.querySelector('.income-list');
 // Create an expense list container
-let ul = document.querySelector('.expenses-list');
+let expenseList = document.querySelector('.expenses-list');
 // document.body.appendChild(ul);
 
 // Global Expense Total
 let totalExpenses = 0;
-
+let income = 0;
 let remaining = 0
+
+const addIncome = () => {
+    let li = document.createElement('li');
+    incomeList.appendChild(li);
+    income += parseFloat(incomeInput.value);
+    li.textContent = '$' + parseFloat(income) + ' ' + incomeDescription.value;
+    console.log(income)
+}
+
+incomeSubmit.addEventListener('click', addIncome)
 
 //add expense function
 const addExpense = () => {
     // create an li element
     let li = document.createElement('li');
     //append to list
-    ul.appendChild(li);
+    expenseList.appendChild(li);
     //append expense amount/description to li
     li.textContent = '$' + parseFloat(addExpenseInput.value) + ' ' + expenseDescription.value;
     //append expense amount to total

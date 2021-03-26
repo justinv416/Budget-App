@@ -21,7 +21,18 @@
                 <input type="number" placeholder="Please Enter Budget" class="budget-input">
                 <button class="budget-submit"><img src="assets/SVG/plus.svg" alt="" class="plus-svg" fill="blue">Add Budget</button>
             </div>
-            <h2>Your Budget:<p class="budget-output"></p></h2>
+            <h2 class="budget-output-heading">Your Budget:<p class="budget-output"></p></h2>
+        </div>
+        <div class="income-container">
+            <div class="heading-wrap">
+                <h1 class="income-heading">Income</h1>
+                <img src="assets/SVG/income.svg" alt="" class="income-svg">
+            </div>
+            <div class="input-container">
+                <input type="number" placeholder="Please Enter Income" class="income-input">
+                <input type="text" placeholder="Enter An Income Description (Optional)" class="income-description">
+                <button class="income-submit"><img src="assets/SVG/plus.svg" alt="" class="plus-svg" fill="blue">Add Income</button>
+            </div>
         </div>
         <!-- Expenses -->
         <div class="expenses-container">
@@ -32,15 +43,19 @@
             <div class="input-container">
                 <input type="number" placeholder="Enter Expense Amount" class="add-expense-input">
                 <input type="text" placeholder="Enter An Expense Description (Optional)" class="expense-description">
+                <button class="add-expense-btn"><img src="assets/SVG/plus.svg" alt="" class="plus-svg">Add an expense</button>
             </div>
-            <button class="add-expense-btn"><img src="assets/SVG/plus.svg" alt="" class="plus-svg">Add an expense</button>
-            <h2 class="expenses-total">Expenses Total: <p class="expenses-total-output"></p></h2>
+            <h2 class="expenses-total-heading">Expenses Total: <p class="expenses-total-output"></p></h2>
         </div>
     </div>
     <div class="wrap">
         <div class="remaining-container">
             <h2 class="remaining-heading">Remaining: <p class="remaining-output"></p></h2>
             <button class="calc-submit">Calculate<img src="assets/SVG/calculator.svg" alt="" class="calculator-svg"></button>
+        </div>
+        <div class="income-list-container">
+            <h2 class="income-output-heading">Your Income:<p class="income-output"></p></h2>
+            <ul class="income-list"></ul>
         </div>
         <div class="expenses-list-container">
             <h2 class="expense-list-heading">expenses list:</h2>

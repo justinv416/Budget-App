@@ -13,9 +13,25 @@ html {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+/* Containers */
+
 .budget-container {
     /* border: 5px solid darkgreen;
     background-color: lightgreen; */
+    box-shadow:  2px 2px 5px 2px rgba(0,0,0,0.5);
+    border-radius: 5px;
+}
+
+.income-container {
+    /* border: 5px solid darkgreen;
+    background-color: lightgreen; */
+    box-shadow:  2px 2px 5px 2px rgba(0,0,0,0.5);
+    border-radius: 5px;
+}
+
+.expenses-container {
+    /* border: 5px solid red;
+    background-color: pink; */
     box-shadow:  2px 2px 5px 2px rgba(0,0,0,0.5);
     border-radius: 5px;
 }
@@ -36,20 +52,41 @@ button {
     color: #358CFF;
 }
 
+/* Headings */
+
 .budget-heading {
     color: darkgreen;
 }
 
-.expenses-container {
-    /* border: 5px solid red;
-    background-color: pink; */
-    box-shadow:  2px 2px 5px 2px rgba(0,0,0,0.5);
-    border-radius: 5px;
+.income-heading {
+    color: darkgreen;
 }
+
 
 .expense-heading {
     color: red;
 }
+
+.remaining-heading {
+    display: flex;
+}
+
+.expense-list-heading {
+    text-align: center;
+}
+
+.budget-output-heading {
+    text-align: center;
+}
+
+.income-output-heading {
+    text-align: center;
+}
+
+.expenses-total-heading {
+    text-align: center;
+}
+
 
 input {
     text-align: center;
@@ -67,6 +104,7 @@ input {
 .input-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .budget-output-container {
@@ -89,6 +127,12 @@ input {
     width: 20rem;
 }
 
+.income-list-container {
+    box-shadow:  2px 2px 5px 2px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    width: 20rem;
+}
+
 ul {
     display: flex;
     flex-direction: column;
@@ -96,6 +140,8 @@ ul {
     list-style-type: circle;
     justify-content: center;
 }
+
+/* SVG's */
 
 .calculator-svg {
     height: 1.5rem;
@@ -106,6 +152,10 @@ ul {
 }
 
 .expenses-svg {
+    height: 3rem;
+}
+
+.income-svg {
     height: 3rem;
 }
 
@@ -120,10 +170,3 @@ ul {
     margin: 1rem 0;
 }
 
-.remaining-heading {
-    display: flex;
-}
-
-.expense-list-heading {
-    text-align: center;
-}
